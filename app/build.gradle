@@ -1,0 +1,24 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.sachin.flipclock'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.sachin.flipclock'
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint { abortOnError false }
+}
